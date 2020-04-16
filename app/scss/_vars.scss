@@ -1,0 +1,11 @@
+$aqua: #10c9c3;
+$gray: #f5f5f5;
+
+@mixin f400 {
+    font-family: 'Montserrat-Regular';
+    font-weight: 400;
+}
+@mixin f500 {
+    font-family: 'Montserrat-Medium';
+    font-weight: 500;
+}
