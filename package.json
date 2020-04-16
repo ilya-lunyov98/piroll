@@ -21,7 +21,8 @@
     "magnific-popup": "^1.1.0",
     "normalize.css": "^8.0.1",
     "npm": "^6.13.6",
-    "slick-carousel": "^1.8.1"
+    "slick-carousel": "^1.8.1",
+    "video.js": "^7.7.5"
   },
   "description": ""
 }
