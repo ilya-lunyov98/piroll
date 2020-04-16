@@ -614,5 +614,76 @@
 
 // form end
 
+//footer
+
+.footer {
+    padding: 80px 0px;
+    ul{
+        padding-left: 0px;
+    }
+    background-color: #141414;
+    #footer__a{   
+            color: #ffffff;
+           text-decoration: none;
+           @include f500;
+           line-height: 72px;
+           letter-spacing: 0.18px;
+           font-size: 18px;
+           color: #fff;
+    
+    }
+    &__wrapper {
+        display: flex;
+    }
+    &__colunn {
+        
+        li{
+            list-style: none;
+            color: #bcbcbc;
+        }
+        a{
+            text-decoration: none;
+            @include nunito;
+            font-size: 15px;
+            letter-spacing: 0.07px;
+            line-height: 24px;
+            color: #bcbcbc;
+            transition: .3s;
+            &:hover{
+                color: $aqua;
+                transition: .1s;
+            }
+        }
+
+    }
+    .footer__colunn--width1{
+        width: calc(30%);
+    }
+    .footer__colunn--width2{
+        padding-left: 80px;
+        width: calc(40%);
+        display: flex;
+        justify-content: center;
+    }
+    .footer__colunn--width3{
+        width: calc(10%);
+        display: flex;
+        justify-content: flex-end;
+    }
+    .footer__colunn--width4{
+        width: calc(10%);
+         display: flex;
+        justify-content: flex-end;
+    }
+    .footer__colunn--width5{
+        display: flex;
+        justify-content: flex-end;
+        width: calc(20%);
+    }
+}
+
+
+//footer end
+
 
 @import "media";
