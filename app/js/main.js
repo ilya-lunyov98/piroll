@@ -5,4 +5,5 @@ function ibg(){
     $(this).css('background-image','url("'+$(this).find('img').attr('src')+'")');
     }
     });
-    }
+    
+}
