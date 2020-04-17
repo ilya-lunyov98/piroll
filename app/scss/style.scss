@@ -71,6 +71,7 @@
             color: #fff;
             background-color: $aqua;
             padding: 22px 47px;
+            transition: .3s;
             &:hover{
                 transform: scale(0.9);
                 transition: .3s;
@@ -477,6 +478,7 @@
     display: flex;
     justify-content: center;
     padding-left:0px;
+    padding-bottom: 5px;
     .slick-active{
         button{
             width: 17px;
@@ -596,6 +598,7 @@
             border: none;
             text-transform: uppercase;
             letter-spacing: 1px;
+            transition: .3s;
             &:hover{
                 transform: scale(0.9);
                 transition: .3s;
@@ -685,5 +688,182 @@
 
 //footer end
 
+
+//header-about
+
+.header-about {
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 35px 0px;
+    }
+    &__menu {
+        ul{
+            li{
+                list-style: none;
+                display: inline-block;
+                &:nth-child(2){
+                    a{
+                      color: $aqua;   
+                    } 
+                }
+                &+li{
+                    margin-left: 30px;
+                }
+                a{
+                    text-decoration: none;
+                    @include f500;
+                    color: #191919;
+                    font-size: 12px;
+                    line-height: 24px;
+                    text-transform: uppercase;
+                    letter-spacing: 1.2px;
+                }
+            }
+        }
+    }
+}
+
+
+//header-about end
+
+
+//presentation
+
+.presentation {
+    &__wrapper {
+        display: flex;
+        justify-content: center;
+        background-image: url('../images/bg-about-page.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position:center;
+        padding: 120px 0px;
+        position: relative;
+    }
+    &__inner {
+        position: relative;
+        z-index: 2;
+        text-align: center;
+        width: calc(37%);
+        color: #fff;
+    }
+    &__title {
+        @include f500;
+        font-size: 38px;
+        line-height: 48px;
+        letter-spacing: 0.38px;
+    }
+    &__descr {
+        font-size: 18px;
+        @include nunito;
+        letter-spacing: 0.09px;
+        line-height: 28px;
+    }
+    &__rectangle{
+        position: absolute;
+        content: '';
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #141414;
+        opacity: 0.6;
+    }
+}
+
+
+//presentation end
+
+
+//about me
+
+.about-me {
+    &__wrapper{
+        display: flex;
+    }
+    &__inner {
+        flex-basis: calc(110%);
+        background-color: $gray;
+        padding-left: 85px;
+        padding-top: 140px;
+    }
+    &__presentation{
+        width: calc(60%);
+    }
+    &__title {
+        @include f500;
+        font-size: 30px;
+        line-height: 84px;
+        letter-spacing: 0.3px;
+        color: #171717;
+    }
+    &__text {
+        @include nunito;
+        line-height: 24px;
+        font-size: 16px;
+        letter-spacing: 0.08px;
+        color: #787878;
+        &:nth-child(3){
+            padding-top: 16px;
+        }
+    }
+    &__signature{
+        padding-top: 40px;
+    }
+}
+
+
+//about me end
+
+
+//make-action
+
+.make-action {
+    &__wrapper{
+        display: flex;
+        justify-content: center;
+    }
+    &__inner{
+        padding: 70px 0px;
+        padding-top: 50px;
+        text-align: center;
+        width: calc(46%);
+    }
+    &__title {
+        @include f500;
+        line-height: 84px;
+        font-size: 30px;
+        letter-spacing: 0.3px;
+        color: $text;
+    }
+    &__text {
+        @include nunito;
+        letter-spacing: 0.08px;
+        line-height: 24px;
+        font-size: 16px;
+        color: #787878;
+        padding-bottom: 40px;
+        padding-top: 16px;
+    }
+    &__link {
+        a{
+            display: inline-block;
+            text-decoration: none;
+            padding: 20px 45px;
+            background-color: $aqua;
+            text-transform: uppercase;
+            color: #fff;
+            transition: all.3s;
+            &:hover{
+                transform: scale(.7);
+                transition: all.3s;
+            }
+        }
+    }
+}
+
+//make-action end
 
 @import "media";
