@@ -17,13 +17,17 @@ $(document).ready(function(){
     });
 
 
-    // function initMap() {
-    //   var opt ={
-    //     center: {lat: 40.781921, lng: -73.971980},
-    //     zoom: 4
-    //   }
-    //   var map = new google.maps.Map(document.getElementById('map'), opt);
-    // }
+    $('.slider-slider__wrapper').slick({
+      arrows: true,
+      dots: false,
+      autoplaySpeed: 2000,
+      nextArrow:'<button type="button" class="slick-next">NEXT PROJECT</button>',
+      prevArrow:'<button type="button" class="slick-prev">PREVIOUS PROJECT</button>'
+
+     
+    });
+
+
 
 
   });
