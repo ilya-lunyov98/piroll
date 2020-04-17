@@ -703,11 +703,6 @@
             li{
                 list-style: none;
                 display: inline-block;
-                &:nth-child(2){
-                    a{
-                      color: $aqua;   
-                    } 
-                }
                 &+li{
                     margin-left: 30px;
                 }
@@ -722,6 +717,11 @@
                 }
             }
         }
+    }
+    .light{
+        a{
+            color: $aqua; 
+        } 
     }
 }
 
@@ -746,7 +746,7 @@
         position: relative;
         z-index: 2;
         text-align: center;
-        width: calc(37%);
+        width: calc(42%);
         color: #fff;
     }
     &__title {
@@ -865,5 +865,81 @@
 }
 
 //make-action end
+
+
+//brief
+
+.brief {
+    background-color: #f6f6f6;
+    &__wrapper {
+        padding: 95px 0px;
+        display: flex;
+        justify-content: center;
+    }
+    &__inner {
+        flex-basis: calc(47%);
+        text-align: center;
+    }
+    &__title {
+        @include f500;
+        color: $text;
+        font-size: 38px;
+        line-height: 84px;
+        letter-spacing: 0.38px;
+    }
+    &__text {
+        padding-top: 10px;
+        @include nunito;
+        font-size: 18px;
+        letter-spacing: 0.09px;
+        line-height: 28px;
+        color: #787878;
+    }
+    &__items {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    &__item {
+        flex-basis: calc(25%);
+        left: 0;
+        height: 300px;
+        width: 341px;
+        position: relative;
+        overflow: hidden;
+        display: block;
+        &:hover{
+            .brief__tint{
+                transform: translateY(0px);
+                transition: transform .3s ease-in-out;
+            }
+        }
+    }
+    &__tint {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-color: $aqua;
+        opacity: 0.85;
+        background-repeat: no-repeat;
+        transform: translateY(500px);
+        transition: transform .5s ease-in;
+        &::after{
+            position: absolute;
+            content: '';
+            background-repeat: no-repeat;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            background-image: url('../images/icons/eye.png');
+            background-position: center;
+        }
+    }
+}
+
+//brief end
+
 
 @import "media";
