@@ -8,6 +8,19 @@ html{
     box-sizing: inherit;
 }
 body{
+    ul{
+            li{
+        transition: all.1s;
+          a{
+        &:hover{
+            color: $aqua;
+            transition: all.1s;
+        }
+    }
+    }
+    }
+
+  
     @include f400;
 }
 .ibg{
@@ -30,3 +43,109 @@ body{
     padding: 0px 15px;
     margin: 0 auto;
 }
+
+.header__burger{
+    transform: translateY(-200%);
+    transition: all .3s;
+    width: 100%;    
+    text-align: center;
+    position: absolute;
+        ul{
+            margin: 0px;
+            display: flex;
+            flex-direction: column;
+            padding-left: 0px;
+            overflow: auto;
+            li{ 
+                overflow: auto;
+                width: 100%;
+                display: block;
+                list-style: none;
+                padding-left: 0px;
+                padding: 20px 0;
+                border-bottom: 1px solid $black;
+                &:first-child{
+                    padding-top: 100px;
+                }
+            a{
+                text-decoration: none;
+                color: $black;
+                letter-spacing: 1.2px;
+                text-transform: uppercase;
+                line-height: 24px;
+                font-size: 24px;
+                @include f500;
+                &:hover{
+                    color: $text;
+                }
+            }
+        }
+    }
+
+}
+
+.menu__burger {
+    position: relative;
+    height: 30px;
+    align-items: center;
+    display: none;
+    &:hover{
+      cursor: pointer;
+    }
+}
+.menu__line {
+    position: relative;
+    width: 35px;
+    height: 5px;
+    background-color: $text;
+    border-radius: 3px;
+    &::after{
+      content: '';
+      position: absolute;
+      width: 35px;
+      height: 5px;    
+      background-color: $text;
+      top: 10px;
+      right: 0;
+       transition:transform .3s,all .3s .3s;
+       border-radius: 3px;
+    }
+    &::before{
+      content: '';
+      position: absolute;
+      width: 35px;
+      height: 5px;
+      background-color: $text;
+      top: -10px;
+      right: 0;
+       transition:transform .3s,all .3s .3s;
+       border-radius: 3px;
+    }
+  }
+  .active{
+    background-color: transparent;
+    &::after{
+      content: '';
+      position: absolute;
+      width: 35px;
+      height: 5px;    
+      background-color: $text;
+      top: 0px;
+      right: 0;
+      transform: rotate(45deg);
+      transition:all .3s , transform .3s .3s;
+      border-radius: 3px;
+    }
+    &::before{
+      content: '';
+      position: absolute;
+      width: 35px;
+      height: 5px;
+      background-color: $text;
+      top: 0px;
+      right: 0;
+      transform: rotate(-45deg);
+      transition: all .3s , transform .3s .3s;
+      border-radius: 3px;
+    }
+  }

@@ -5,9 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link href="https://vjs.zencdn.net/7.7.5/video-js.css" rel="stylesheet" />
-    <title>Document</title>
+    <title>Main</title>
     <link rel="stylesheet" href="css/libs.min.css" />
     <link rel="stylesheet" href="css/style.min.css" />
+    <link rel="stylesheet" href="css/animate.css" />
   </head>
   <body>
 
@@ -20,16 +21,31 @@
             <img src="images/logo.png" alt="">
           </a>
         </div>
-        <div class="header__menu">                    
+        <nav class="header__menu">                    
           <ul>
             <li><a href="#">home</a></li>
-            <li><a href="#">about</a></li>
+            <li><a href="about.html">about</a></li>
             <li><a href="#">work</a></li>
-            <li><a href="#">process</a></li>
-            <li><a href="#">services</a></li>
+            <li><a href="home.html">process</a></li>
+            <li><a href="slider.html">services</a></li>
             <li><a href="#">testimonials</a></li>
-            <li><a href="#">contact</a></li>
+            <li><a href="contacts.html">contact</a></li>
           </ul>
+        </nav>
+        <div class="header__burger">
+          <ul>
+            <li><a href="#">home</a></li>
+            <li><a href="about.html">about</a></li>
+            <li><a href="#">work</a></li>
+            <li><a href="home.html">process</a></li>
+            <li><a href="slider.html">services</a></li>
+            <li><a href="#">testimonials</a></li>
+            <li><a href="contacts.html">contact</a></li>
+          </ul>
+        </div>
+        <div class="menu__burger">
+          <div class="menu__line">
+          </div>
         </div>
       </div>
       <div class="header__description">
@@ -53,7 +69,7 @@
 
     <section class="about">
       <div class="about__wrapper">
-      <div class="about__inner">
+      <div class="about__inner wow fadeInUp">
       <div class="about__title">
         About Us
       </div>
@@ -71,40 +87,40 @@
 
     <section class="skills">
       <div class="skills__wrapper">
-        <div class="skills__scale">
+        <div class="skills__scale wow fadeInLeftBig" >
           <div class="skills__title">
             Professional Skills
            </div>
         <div class="skills__inner">
-          <div class="skills__name">UI/UX Design   <span>75%</span></div>
+          <div class="skills__name">UI/UX Design<span>75%</span></div>
           <div class="skills__container">
             <div class="skills__ui"></div>
           </div>
         </div>
 
         <div class="skills__inner">
-          <div class="skills__name">web development   <span>90%</span></div>
+          <div class="skills__name">web development<span>90%</span></div>
           <div class="skills__container">
             <div class="skills__web-dev"></div>
           </div>
         </div>
 
         <div class="skills__inner padding">
-          <div class="skills__name">marketing   <span>65%</span></div>
+          <div class="skills__name">marketing<span>65%</span></div>
           <div class="skills__container">
             <div class="skills__marketing">
           </div>
         </div>
       </div>
         </div>
-        <div class="skills__img ibg"></div>
+        <div class="skills__img ibg wow fadeInRightBig" ></div>
       </div>
     </section>
 
     <section class="stat">
       <div class="container">
           <div class="stat__wrapper">
-            <div class="stat__item">
+            <div class="stat__item wow fadeInUpBig">
               <div class="stat__amount">
                 548
               </div>
@@ -112,7 +128,7 @@
                 projects completed
               </div>
             </div>
-            <div class="stat__item">
+            <div class="stat__item wow fadeInUpBig">
               <div class="stat__amount">
                 1465
               </div>
@@ -120,7 +136,7 @@
                 WORKING HOURS
               </div>
             </div>
-            <div class="stat__item">
+            <div class="stat__item wow fadeInUpBig">
               <div class="stat__amount">
                 612
               </div>
@@ -128,7 +144,7 @@
                 POSITIVE FEEDBACKS
               </div>
             </div>
-            <div class="stat__item">
+            <div class="stat__item wow fadeInUpBig">
               <div class="stat__amount">
                 735
               </div>
@@ -142,35 +158,35 @@
 
     <section class="works">
       <div class="works__images">
-        <a class="works__image ibg" style="background-image: url('images/img-1.jpg');" href="#">
+        <a class="works__image ibg wow fadeInUpBig"  style="background-image: url('images/img-1.jpg');" href="#">
           <div class="works__tint">
           </div> 
         </a>
-        <a class="works__image ibg" style="background-image: url('images/img-2.jpg');" href="#">
+        <a class="works__image ibg wow fadeInUpBig" style="background-image: url('images/img-2.jpg');" href="#">
           <div class="works__tint">
           </div>
         </a>
-        <a class="works__image ibg" style="background-image: url('images/img-3.jpg');" href="#">
+        <a class="works__image ibg wow fadeInUpBig" style="background-image: url('images/img-3.jpg');" href="#">
           <div class="works__tint">
           </div>
         </a>
-        <a class="works__image ibg" style="background-image: url('images/img-4.jpg');" href="#">
+        <a class="works__image ibg wow fadeInUpBig" style="background-image: url('images/img-4.jpg');" href="#">
           <div class="works__tint">
           </div>
         </a>
-        <a class="works__image ibg" style="background-image: url('images/img-4.jpg');" href="#">
+        <a class="works__image ibg wow fadeInUpBig"  style="background-image: url('images/img-4.jpg');" href="#">
           <div class="works__tint">
           </div>
         </a>
-        <a class="works__image ibg" style="background-image: url('images/img-3.jpg');" href="#">
+        <a class="works__image ibg wow fadeInUpBig" style="background-image: url('images/img-3.jpg');" href="#">
           <div class="works__tint">
           </div>
         </a>
-        <a class="works__image ibg" style="background-image: url('images/img-2.jpg');" href="#">
+        <a class="works__image ibg wow fadeInUpBig" style="background-image: url('images/img-2.jpg');" href="#">
           <div class="works__tint">
           </div>
         </a>
-        <a class="works__image ibg" style="background-image: url('images/img-1.jpg');" href="#">
+        <a class="works__image ibg wow fadeInUpBig" style="background-image: url('images/img-1.jpg');" href="#">
           <div class="works__tint">
           </div>
         </a>
@@ -190,9 +206,9 @@
                     </div>
                       <div class="video__text">
                         Was years it seasons was there form he in in them together over that, 
-                third sixth gathered female creeping bearing behold years.
+                        third sixth gathered female creeping bearing behold years.
                       </div>
-                      <video class="video-js" controls poster="images/poster.jpg" data-setup="{}">
+                      <video class="video-js wow fadeInRightBig" data-wow-delay=".3s" data-wow-duration ="2s" controls poster="images/poster.jpg" data-setup="{}">
                         <source src="video/work.mp4">
                       </video>
               </div>
@@ -205,7 +221,7 @@
       <div class="container">
         <div class="services__wrapper">
           <div class="services__items">
-            <div class="services-item">
+            <div class="services-item wow fadeInLeftBig ">
               <div class="services-item__icon">
                 <img src="images/icons/icon-1.png" alt="">
               </div>
@@ -217,7 +233,7 @@
                 make it wherein own
               </div>
             </div>
-            <div class="services-item">
+            <div class="services-item wow fadeInLeftBig ">
               <div class="services-item__icon">
                 <img src="images/icons/icon-2.png" alt="">
               </div>
@@ -229,7 +245,7 @@
                 third she'd kind fill
               </div>
             </div>
-            <div class="services-item">
+            <div class="services-item wow fadeInLeftBig ">
               <div class="services-item__icon">
                 <img src="images/icons/icon-3.png" alt="">
               </div>
@@ -241,7 +257,7 @@
                 earth they're creeping
               </div>
             </div>
-            <div class="services-item">
+            <div class="services-item wow fadeInLeftBig ">
               <div class="services-item__icon">
                 <img src="images/icons/icon-4.png" alt="">
               </div>
@@ -253,7 +269,7 @@
                 make it wherein own
               </div>
             </div>
-            <div class="services-item">
+            <div class="services-item wow fadeInRightBig ">
               <div class="services-item__icon">
                 <img src="images/icons/icon-5.png" alt="">
               </div>
@@ -265,7 +281,7 @@
                 meat you, may
               </div>
             </div>
-            <div class="services-item">
+            <div class="services-item wow fadeInRightBig">
               <div class="services-item__icon">
                 <img src="images/icons/icon-6.png" alt="">
               </div>
@@ -277,7 +293,7 @@
                 give moving saw give
               </div>
             </div>
-            <div class="services-item">
+            <div class="services-item wow fadeInRightBig">
               <div class="services-item__icon">
                 <img src="images/icons/icon-7.png" alt="">
               </div>
@@ -289,7 +305,7 @@
                 fourth life whales  
               </div>
             </div>
-            <div class="services-item">
+            <div class="services-item wow fadeInRightBig ">
               <div class="services-item__icon">
                 <img src="images/icons/icon-8.png" alt="">
               </div>
@@ -309,7 +325,7 @@
     <section class="slider">
       <div class="container">
         <div class="slider__container">
-        <div class="slider__item">
+        <div class="slider__item wow fadeInUpBig" data-wow-duration="1s">
         <div class="slider__text">
          <span>“</span>  Outstanding job and exceeded all expectations. It was a pleasure 
             to work with them on a sizable first project and am looking 
@@ -346,19 +362,19 @@
     <section class="colaboration">
       <div class="container">
       <div class="colaboration__wrapper">
-        <div class="colaboration__img">
+        <div class="colaboration__img wow fadeInUp" data-wow-delay=".6s">
           <a href="#"><img src="images/pic-1.png" alt=""></a>
         </div>
-        <div class="colaboration__img">
+        <div class="colaboration__img wow fadeInUp" data-wow-delay=".3s">
           <a href="#"><img src="images/pic-2.png" alt=""></a>
         </div>
-        <div class="colaboration__img">
+        <div class="colaboration__img wow fadeInUp" >
           <a href="#"><img src="images/pic-3.png" alt=""></a>
         </div>
-        <div class="colaboration__img">
+        <div class="colaboration__img wow fadeInUp" data-wow-delay=".4s">
           <a href="#"><img src="images/pic-4.png" alt=""></a>
         </div>
-        <div class="colaboration__img">
+        <div class="colaboration__img wow fadeInUp" data-wow-delay=".6s">
           <a href="#"><img src="images/pic-5.png" alt=""></a>
         </div>
       </div>
@@ -377,7 +393,7 @@
           if this could be the start of something beautiful.
         </div>        
       </div>
-      <form class="form__inner">
+      <form class="form__inner wow fadeInLeftBig" data-wow-duration="1.s">
           <input class="form__input" type="text" placeholder="Your Name">
           <input class="form__input" type="text" placeholder="Your Email">
           <input class="form__input--full" type="text" placeholder=" Your Title"> 
@@ -433,6 +449,7 @@
     </footer>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/wow.js"></script>
     <script src="js/libs.min.js"></script>
     <script src="js/main.js"></script>
   </body>

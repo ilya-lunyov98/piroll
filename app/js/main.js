@@ -23,11 +23,12 @@ $(document).ready(function(){
       autoplaySpeed: 2000,
       nextArrow:'<button type="button" class="slick-next">NEXT PROJECT</button>',
       prevArrow:'<button type="button" class="slick-prev">PREVIOUS PROJECT</button>'
-
-     
     });
 
+    $('.menu__burger').click(function(){
+      $('.menu__line').toggleClass('active'),
+      $('.header__burger').toggleClass('slide')
+  });
 
-
-
+  new WOW().init();
   });
